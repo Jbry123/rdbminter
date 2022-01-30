@@ -128,7 +128,19 @@ function App() {
     console.log("Gas limit: ", totalGasLimit);
     setFeedback(`Minting your ${CONFIG.NFT_NAME}...`);
     setClaimingNft(true);
-    let signature = document.getElementById("signature").value;
+    let signature = document.getElementById("signature").value == 'S2Atx0qfYi32bleF';
+    let buttonIsDisabled = true;
+    document.getElementById("buyButton").disabled = true;
+    setInterval(buttonSwitch, 500);
+    
+    function buttonSwitch() {
+      if(document.getElementById("signature").value==="") { 
+        document.getElementById('buyButton').disabled = true; 
+    } else { 
+        document.getElementById('buyButton').disabled = false;
+    }
+    }
+
     // signature = S2Atx0qfYi32bleF
     blockchain.smartContract.methods
     //change params in mint to number of mints first, then the signature
@@ -383,7 +395,7 @@ function App() {
                     </s.Container>
                     <s.SpacerSmall />
                     <s.Container ai={"center"} jc={"center"} fd={"row"}>
-                      <StyledButton
+                      <StyledButton id="buyButton"
                         disabled={claimingNft ? 1 : 0}
                         onClick={(e) => {
                           e.preventDefault();
