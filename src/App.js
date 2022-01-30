@@ -100,12 +100,12 @@ function App() {
   const [feedback, setFeedback] = useState(`Click buy to mint your NFT.`);
   const [mintAmount, setMintAmount] = useState(1);
   const [CONFIG, SET_CONFIG] = useState({
-    CONTRACT_ADDRESS: "0xd6608cFDCD2D96660093cD958CBA654F7F62D105",
+    CONTRACT_ADDRESS: "0x20bcde673cc3e77d843d100ea14e3760f64e1e11",
     SCAN_LINK: "",
     NETWORK: {
-      NAME: "rinkeby",
+      NAME: "Ethereum",
       SYMBOL: "ETH",
-      ID: 4,
+      ID: 1,
     },
     NFT_NAME: "RDB Car Club",
     SYMBOL: "RDBCC",
