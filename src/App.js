@@ -118,6 +118,7 @@ function App() {
     SHOW_BACKGROUND: false,
   });
 
+
   const claimNFTs = () => {
     let cost = CONFIG.WEI_COST;
     let gasLimit = CONFIG.GAS_LIMIT;
@@ -128,10 +129,7 @@ function App() {
     console.log("Gas limit: ", totalGasLimit);
     setFeedback(`Minting your ${CONFIG.NFT_NAME}...`);
     setClaimingNft(true);
-    let signature = document.getElementById("signature").value == 'S2Atx0qfYi32bleF';
-    let buttonIsDisabled = true;
-    document.getElementById("buyButton").disabled = true;
-    setInterval(buttonSwitch, 500);
+    
     
     function buttonSwitch() {
       if(document.getElementById("signature").value==="") { 
@@ -219,7 +217,7 @@ function App() {
           <StyledLogo style={{borderRadius: "25px"}} alt={"logo"} src={"https://rdbcarclub.com/wp-content/uploads/2021/11/cropped-IMG_1282.jpg"} />
         </a>
         <s.SpacerSmall />
-        <ResponsiveWrapper flex={1} style={{ padding: 24, width: "50%" }} test>
+        <ResponsiveWrapper flex={1} style={{ padding: 24, width: "50%", minWidth: "300px" }} test>
           <s.SpacerLarge />
           <s.Container
             flex={2}
@@ -227,7 +225,7 @@ function App() {
             ai={"center"}
             style={{
               backgroundColor: "rgba(80, 80, 80, 0.85)",
-              width: "50%",
+              width: "100%",
               padding: 24,
               borderRadius: 24,
               border: "4px solid #020202",
