@@ -114,7 +114,7 @@ function App() {
     DISPLAY_COST: 0.1,
     GAS_LIMIT: 285000,
     MARKETPLACE: "opensea",
-    MARKETPLACE_LINK: "",
+    MARKETPLACE_LINK: "https://opensea.io/collection/rdb-official",
     SHOW_BACKGROUND: false,
   });
 
