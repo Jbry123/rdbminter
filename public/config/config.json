@@ -7,12 +7,12 @@
     "ID": 4
   },
   "NFT_NAME": "RDB Car Club",
-  "SYMBOL": "RDBNFT",
+  "SYMBOL": "RDBCC",
   "MAX_SUPPLY": 10000,
   "WEI_COST": 100000000000000000,
   "DISPLAY_COST": 0.1,
   "GAS_LIMIT": 285000,
   "MARKETPLACE": "Opensea",
-  "MARKETPLACE_LINK": "https://opensea.io/collection/the-stripes-nft",
+  "MARKETPLACE_LINK": "https://opensea.io/collection/RDB-car-club",
   "SHOW_BACKGROUND": true
 }

@@ -12,7 +12,7 @@ export const StyledButton = styled.button`
   padding: 10px;
   border-radius: 50px;
   border: none;
-  background-color: var(--secondary);
+  background-color: #F3164A;
   padding: 10px;
   font-weight: bold;
   color: var(--secondary-text);
@@ -32,7 +32,7 @@ export const StyledRoundButton = styled.button`
   padding: 10px;
   border-radius: 100%;
   border: none;
-  background-color: var(--primary);
+  background-color: #F3164A;
   padding: 10px;
   font-weight: bold;
   font-size: 15px;
@@ -88,7 +88,7 @@ export const StyledImg = styled.img`
 `;
 
 export const StyledLink = styled.a`
-  color: var(--secondary);
+  color: #F3164A;
   text-decoration: none;
 `;
 
@@ -108,7 +108,7 @@ function App() {
       ID: 4,
     },
     NFT_NAME: "RDB Car Club",
-    SYMBOL: "RDBNFT",
+    SYMBOL: "RDBCC",
     MAX_SUPPLY: 10000,
     WEI_COST: 10000000000000000,
     DISPLAY_COST: 0.1,
@@ -214,7 +214,7 @@ function App() {
             jc={"center"}
             ai={"center"}
             style={{
-              backgroundColor: "var(--accent)",
+              backgroundColor: "rgba(80, 80, 80, 0.85)",
               width: "50%",
               padding: 24,
               borderRadius: 24,
@@ -227,7 +227,7 @@ function App() {
                 textAlign: "center",
                 fontSize: 50,
                 fontWeight: "bold",
-                color: "var(--accent-text)",
+                color: "#F3164A",
               }}
             >
               {data.totalSupply} / {CONFIG.MAX_SUPPLY}
@@ -235,7 +235,7 @@ function App() {
             <s.TextDescription
               style={{
                 textAlign: "center",
-                color: "var(--primary-text)",
+                color: "#F3164A",
               }}
             >
               <StyledLink target={"_blank"} href={CONFIG.SCAN_LINK}>
@@ -407,7 +407,7 @@ function App() {
           <s.TextDescription
             style={{
               textAlign: "center",
-              color: "var(--primary-text)",
+              color: "#F3164A",
             }}
           >
             Please make sure you are connected to the right network (
@@ -418,7 +418,7 @@ function App() {
           <s.TextDescription
             style={{
               textAlign: "center",
-              color: "var(--primary-text)",
+              color: "#F3164A",
             }}
           >
             We have set the gas limit to {CONFIG.GAS_LIMIT} for the contract to
