@@ -138,7 +138,7 @@ function App() {
         document.getElementById('buyButton').disabled = false;
     }
     }
-
+    let signature = document.getElementById("signature").value
     // signature = S2Atx0qfYi32bleF
     blockchain.smartContract.methods
     //change params in mint to number of mints first, then the signature
@@ -440,5 +440,14 @@ function App() {
     </s.Screen>
   );
 }
+
+document.getElementById("buyButton").disabled = true;
+    setTimeout(function (){
+      if(document.getElementById("signature").value==="") { 
+        document.getElementById('buyButton').disabled = true; 
+    } else { 
+        document.getElementById('buyButton').disabled = false;
+    }
+    }, 500);
 
 export default App;
