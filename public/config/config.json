@@ -1,18 +1,18 @@
 {
-  "CONTRACT_ADDRESS": "0xd9145CCE52D386f254917e481eB44e9943F39138",
-  "SCAN_LINK": "https://rinkeby.etherscan.io/address/0x3540C6710d54de337C3E200a99bbF80Db9C707F9",
+  "CONTRACT_ADDRESS": "0xc1D0caDbfC891968F2F4f4734067A4CE504f2421",
+  "SCAN_LINK": "https://rinkeby.etherscan.io/address/0xc1D0caDbfC891968F2F4f4734067A4CE504f2421",
   "NETWORK": {
-    "NAME": "Rinkeby",
+    "NAME": "rinkeby",
     "SYMBOL": "ETH",
     "ID": 4
   },
   "NFT_NAME": "RDB Car Club",
   "SYMBOL": "RDBNFT",
   "MAX_SUPPLY": 10000,
-  "WEI_COST": 4000000000000000000,
-  "DISPLAY_COST": 4,
+  "WEI_COST": 100000000000000000,
+  "DISPLAY_COST": 0.1,
   "GAS_LIMIT": 285000,
-  "MARKETPLACE": "Opeansea",
+  "MARKETPLACE": "Opensea",
   "MARKETPLACE_LINK": "https://opensea.io/collection/the-stripes-nft",
   "SHOW_BACKGROUND": true
 }

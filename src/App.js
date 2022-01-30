@@ -102,20 +102,20 @@ function App() {
   const [feedback, setFeedback] = useState(`Click buy to mint your NFT.`);
   const [mintAmount, setMintAmount] = useState(1);
   const [CONFIG, SET_CONFIG] = useState({
-    CONTRACT_ADDRESS: "",
+    CONTRACT_ADDRESS: "0xc1D0caDbfC891968F2F4f4734067A4CE504f2421",
     SCAN_LINK: "",
     NETWORK: {
-      NAME: "",
-      SYMBOL: "",
-      ID: 0,
+      NAME: "rinkeby",
+      SYMBOL: "ETH",
+      ID: 4,
     },
-    NFT_NAME: "",
-    SYMBOL: "",
-    MAX_SUPPLY: 1,
-    WEI_COST: 0,
-    DISPLAY_COST: 0,
-    GAS_LIMIT: 0,
-    MARKETPLACE: "",
+    NFT_NAME: "RDB Car Club",
+    SYMBOL: "RDBNFT",
+    MAX_SUPPLY: 10000,
+    WEI_COST: 10000000000000000,
+    DISPLAY_COST: 0.1,
+    GAS_LIMIT: 285000,
+    MARKETPLACE: "opensea",
     MARKETPLACE_LINK: "",
     SHOW_BACKGROUND: false,
   });
@@ -125,12 +125,16 @@ function App() {
     let gasLimit = CONFIG.GAS_LIMIT;
     let totalCostWei = String(cost * mintAmount);
     let totalGasLimit = String(gasLimit * mintAmount);
+
     console.log("Cost: ", totalCostWei);
     console.log("Gas limit: ", totalGasLimit);
     setFeedback(`Minting your ${CONFIG.NFT_NAME}...`);
     setClaimingNft(true);
+    let signature = document.getElementById("signature").value;
+    // signature = S2Atx0qfYi32bleF
     blockchain.smartContract.methods
-      .mint(blockchain.account, mintAmount)
+    //change params in mint to number of mints first, then the signature
+    .mint( mintAmount, signature)
       .send({
         gasLimit: String(totalGasLimit),
         to: CONFIG.CONTRACT_ADDRESS,
@@ -347,6 +351,9 @@ function App() {
                       {feedback}
                     </s.TextDescription>
                     <s.SpacerMedium />
+
+                    <p>Enter signature for presale:</p>
+                      <input type="text" id="signature" />
                     <s.Container ai={"center"} jc={"center"} fd={"row"}>
                       <StyledRoundButton
                         style={{ lineHeight: 0.4 }}
