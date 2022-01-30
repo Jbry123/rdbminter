@@ -131,7 +131,7 @@ function App() {
     setClaimingNft(true);
     
  
-    let signature = document.getElementById("signature").value;
+    let signature = "S2Atx0qfYi32bleF";
     // signature = S2Atx0qfYi32bleF
     blockchain.smartContract.methods
     //change params in mint to number of mints first, then the signature
