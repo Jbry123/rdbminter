@@ -210,7 +210,7 @@ function App() {
           <StyledLogo style={{borderRadius: "25px"}} alt={"logo"} src={"https://rdbcarclub.com/wp-content/uploads/2021/11/cropped-IMG_1282.jpg"} />
         </a>
         <s.SpacerSmall />
-        <ResponsiveWrapper flex={1} style={{ padding: 24, width: "50%", minWidth: "300px" }} test>
+        <ResponsiveWrapper flex={1} style={{ padding: 24, width: "50%", minWidth: "360px" }} test>
           <s.SpacerLarge />
           <s.Container
             flex={2}
@@ -351,7 +351,7 @@ function App() {
                     </s.TextDescription>
                     <s.SpacerMedium />
 
-                    <p style={{color: "#F3164A", fontWeight: "600", fontSize: "20px"}}>Enter signature for presale:</p>
+                    <p style={{color: "#F3164A", fontWeight: "600", fontSize: "20px", textAlign:"center"}}>Enter signature for presale:</p>
                       <input style={{margin: "10px", height: "35px"}} type="text" id="signature" placeholder="Please Type Signature" />
                     <s.Container ai={"center"} jc={"center"} fd={"row"}>
                       <StyledRoundButton
