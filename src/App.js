@@ -101,7 +101,7 @@ function App() {
   const [mintAmount, setMintAmount] = useState(1);
   const [CONFIG, SET_CONFIG] = useState({
     CONTRACT_ADDRESS: "0x20bcde673cc3e77d843d100ea14e3760f64e1e11",
-    SCAN_LINK: "",
+    SCAN_LINK: "https://etherscan.io/address/0x20bcde673cc3e77d843d100ea14e3760f64e1e11",
     NETWORK: {
       NAME: "Ethereum",
       SYMBOL: "ETH",
@@ -112,7 +112,7 @@ function App() {
     MAX_SUPPLY: 10000,
     WEI_COST: 10000000000000000,
     DISPLAY_COST: 0.1,
-    GAS_LIMIT: 110000,
+    GAS_LIMIT: 130000,
     MARKETPLACE: "opensea",
     MARKETPLACE_LINK: "https://opensea.io/collection/rdb-official",
     SHOW_BACKGROUND: false,
