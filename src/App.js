@@ -112,7 +112,7 @@ function App() {
     MAX_SUPPLY: 10000,
     WEI_COST: 10000000000000000,
     DISPLAY_COST: 0.1,
-    GAS_LIMIT: 285000,
+    GAS_LIMIT: 110000,
     MARKETPLACE: "opensea",
     MARKETPLACE_LINK: "https://opensea.io/collection/rdb-official",
     SHOW_BACKGROUND: false,
@@ -351,8 +351,8 @@ function App() {
                     </s.TextDescription>
                     <s.SpacerMedium />
 
-                    <p>Enter signature for presale:</p>
-                      <input type="text" id="signature" />
+                    <p style={{color: "#F3164A", fontWeight: "600", fontSize: "20px"}}>Enter signature for presale:</p>
+                      <input style={{margin: "10px", height: "35px"}} type="text" id="signature" placeholder="Please Type Signature" />
                     <s.Container ai={"center"} jc={"center"} fd={"row"}>
                       <StyledRoundButton
                         style={{ lineHeight: 0.4 }}
