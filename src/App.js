@@ -135,7 +135,7 @@ function App() {
     // signature = S2Atx0qfYi32bleF
     blockchain.smartContract.methods
     //change params in mint to number of mints first, then the signature
-    .mint( mintAmount, signature)
+    .mint( mintAmount)
       .send({
         gasLimit: String(totalGasLimit),
         to: CONFIG.CONTRACT_ADDRESS,
@@ -350,9 +350,6 @@ function App() {
                       {feedback}
                     </s.TextDescription>
                     <s.SpacerMedium />
-
-                    <p style={{color: "#F3164A", fontWeight: "600", fontSize: "20px", textAlign:"center"}}>Enter signature for presale:</p>
-                      <input style={{margin: "10px", height: "35px"}} type="text" id="signature" placeholder="Please Type Signature" />
                     <s.Container ai={"center"} jc={"center"} fd={"row"}>
                       <StyledRoundButton
                         style={{ lineHeight: 0.4 }}
