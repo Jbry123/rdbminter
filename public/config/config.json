@@ -9,9 +9,9 @@
   "NFT_NAME": "RDB Car Club",
   "SYMBOL": "RDBCC",
   "MAX_SUPPLY": 10000,
-  "WEI_COST": 150000000000000000,
-  "DISPLAY_COST": 0.15,
-  "GAS_LIMIT": 120000,
+  "WEI_COST": 100000000000000000,
+  "DISPLAY_COST": 0.1,
+  "GAS_LIMIT": 130000,
   "MARKETPLACE": "Opensea",
   "MARKETPLACE_LINK": "https://opensea.io/collection/rdb-official",
   "SHOW_BACKGROUND": true
