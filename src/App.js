@@ -109,7 +109,7 @@ function App() {
     },
     NFT_NAME: "RDB Car Club",
     SYMBOL: "RDBCC",
-    MAX_SUPPLY: 10000,
+    MAX_SUPPLY: 5000,
     WEI_COST: 150000000000000000,
     DISPLAY_COST: 0.15,
     GAS_LIMIT: 120000,
@@ -233,6 +233,7 @@ function App() {
                 color: "#F3164A",
               }}
             >
+              <span style={{color: "white", fontSize: "15px", lineHeight: "1"}}>*mint data not accurate until wallet is connected, we're at over 1400*</span> <br />
               {data.totalSupply} / {CONFIG.MAX_SUPPLY}
             </s.TextTitle>
             <s.TextDescription
